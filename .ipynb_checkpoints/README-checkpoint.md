@@ -52,6 +52,19 @@ Google Colab runs entirely in your browser with no installation required. It can
 - Click the upload icon (page with an arrow) and upload both `.xlsx` files from your downloaded ZIP
 - The files will appear at `/content/` which is where the notebook looks by default
 
+**Option B — Mount Google Drive (files persist between sessions)**
+- Upload both `.xlsx` files to your Google Drive first
+- Add this cell at the top of the notebook and run it:
+  ```python
+  from google.colab import drive
+  drive.mount('/content/drive')
+  ```
+- Then update the file paths in the **Load the Data** cell to point to your Drive folder:
+  ```python
+  items   = pd.read_excel('/content/drive/MyDrive/inHouseDayDataAnalysis/Auctions_and_contacts.xlsx', sheet_name='Auction Items')
+  catalog = pd.read_excel('/content/drive/MyDrive/inHouseDayDataAnalysis/Full_Catalog.xlsx', sheet_name='Page 1')
+  ```
+
 5. Click **Runtime → Run all** to execute every cell, or use **Shift + Enter** to run one cell at a time.
 
 
