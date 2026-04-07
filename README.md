@@ -28,6 +28,9 @@ The repo contains:
 auction_analysis.ipynb
 Auctions_and_contacts__1_.xlsx
 Full_Catalog__1_.xlsx
+Financial_transactions.xlsx
+IzzyAuctionHouse_Case_Database.db
+
 ```
 
 ---
@@ -107,3 +110,14 @@ Navigate into the repo folder and start Jupyter:
 cd inHouseDayDataAnalysis
 jupyter notebook
 ```
+
+## Option 4 — SQL on SQLite 
+
+SQLite is a free online SQL IDE.
+
+1. Download the repo zip folder as described above
+2. Go to [sqlite.com](https://sqliteonline.com)
+3. Add the data files:
+   - In the top-left panel click the **Database icon → Open SQLite DB**
+   - Upload  `IzzyAuctionHouse_Case_Database.db` from your downloaded ZIP
+---
